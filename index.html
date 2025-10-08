@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Task Manager</h1>
+
+  <!-- Project Section -->
+  <section>
+    <h2>Add Project</h2>
+    <input type="text" id="projectName" placeholder="Project name">
+    <button id="addProjectBtn">Add Project</button>
+    <ul id="projectList"></ul>
+  </section>
+
+  <!-- Task Section -->
+  <section>
+    <h2>Add Task</h2>
+    <select id="projectSelect"></select>
+    <input type="text" id="taskName" placeholder="Task name">
+    <select id="taskStatus">
+      <option>To Do</option>
+      <option>In Progress</option>
+      <option>Done</option>
+    </select>
+    <input type="text" id="taskUser" placeholder="Assign to user">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
